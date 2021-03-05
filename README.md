@@ -18,3 +18,9 @@ Full Calendar JS, PHP event persistence integration
 <p>Displaying an event that has been added</p>
 
 <img src="screenshots/display.png">
+
+## Events Dialog
+
+<p>Diplaying all events in a bootstrap dialog modal</p>
+
+<img src="screenshots/events.png">

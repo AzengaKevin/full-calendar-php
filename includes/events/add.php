@@ -1,5 +1,5 @@
 <div class="modal fade" id="add-event">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-dialog-centered">
         <form id="add-event-form" class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title">Add Event</h5>

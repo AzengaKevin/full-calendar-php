@@ -23,13 +23,15 @@
     </header>
     <main>
         <div class="container my-4">
-            <div class="py-2">
+            <div class="d-flex py-2">
                 <button class="btn btn-dark" data-toggle="modal" data-target="#add-event">Add Event</button>
+                <button type="button" id="show-events" class="btn btn-dark ml-2">Show Events</button>
             </div>
             <div id="calendar"></div>
         </div>
 
         <?php include_once(__DIR__ . '/includes/events/add.php') ?>
+        <?php include_once(__DIR__ . '/includes/events/show.php') ?>
     </main>
     <footer>
     </footer>

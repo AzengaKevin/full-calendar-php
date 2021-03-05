@@ -30,8 +30,30 @@ document.addEventListener('DOMContentLoaded', function () {
         //Add the event to the calendar
         calendar.addEvent({title, start, end});
 
+        //Clear Fields
+        document.getElementById('title').value = "";
+        document.getElementById('startDate').value = "";
+        document.getElementById('endDate').value = "";
+
         //Hide the modal
         $('#add-event').modal('hide');
 
+    })
+
+    let showEventsButton = document.getElementById('show-events')
+
+    showEventsButton.addEventListener('click', event => {
+        
+        const eventListElement = document.getElementById('event-list');
+
+        let eventList = '<ul>';
+
+        calendar.getEvents().forEach(e => eventList += `<li>${e.title}</li>`);
+
+        eventList += '</ul>';
+
+        eventListElement.innerHTML = eventList
+
+        $('#list-events').modal('show');
     })
 });
