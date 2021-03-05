@@ -14,7 +14,7 @@
 
 <body>
 
-    <header>
+    <header class="sticky-top">
         <div class="navbar navbar-dark bg-dark navbar-expand-lg">
             <div class="container">
                 <a href="/" class="navbar-brand">Full Calendar</a>
@@ -23,8 +23,13 @@
     </header>
     <main>
         <div class="container my-4">
+            <div class="py-2">
+                <button class="btn btn-dark" data-toggle="modal" data-target="#add-event">Add Event</button>
+            </div>
             <div id="calendar"></div>
         </div>
+
+        <?php include_once(__DIR__ . '/includes/events/add.php') ?>
     </main>
     <footer>
     </footer>
